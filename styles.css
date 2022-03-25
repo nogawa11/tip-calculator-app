@@ -12,10 +12,12 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
 }
 
 #logo {
-  margin: 3em 0 5em 0;
+  margin: 3em 0 4em 0;
 }
 
 label {
@@ -38,6 +40,7 @@ label {
   font-weight: 600;
   text-align: right;
   padding-right: 0.8em;
+  border-radius: 4px;
 }
 
 input::placeholder {
@@ -220,4 +223,69 @@ p {
   display: flex;
   justify-content: space-between;
   text-align: end;
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #logo {
+    margin: 2em 0 2em 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+  .labels {
+    display: block;
+  }
+  .total, .tip-amount {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .card {
+    width: 95%;
+    display: block;
+    margin-bottom: 2em;
+  }
+
+  .form {
+    margin: 0;
+    padding: 1em;
+    width: auto;
+  }
+
+  .bill-form input[type="number"], .number-form input[type="number"] {
+    padding-right: 0;
+  }
+
+  .bill-form input::placeholder, .number-form input::placeholder {
+    padding-right: 0.8em;
+  }
+
+  .buttons {
+    margin: 1em 0 2em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9em;
+    width: 100%;
+  }
+
+  .buttons > input[type="number"] {
+    width: 100%;
+  }
+
+  .calculation {
+    width: auto;
+    margin: 1em;
+  }
+
+  .labels {
+    display: flex;
+  }
 }
