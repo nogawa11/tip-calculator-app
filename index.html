@@ -12,20 +12,28 @@
     <div class="card">
       <div class="form">
         <div class="bill-form">
-          <label for="bill">Bill</label>
+          <div class="form-label">
+            <label for="bill">Bill</label>
+            <p class="error-message-bill">Can't be zero</p>
+          </div>
           <input class="bill" name="bill" type="number" placeholder="0">
         </div>
-        <label for="tip">Select Tip %</label>
-        <div class="buttons">
-          <button class="button-tip" value="0.05">5%</button>
-          <button class="button-tip" value="0.1">10%</button>
-          <button class="button-tip" value="0.15">15%</button>
-          <button class="button-tip" value="0.2">25%</button>
-          <button class="button-tip" value="0.5">50%</button>
-          <input class="button-custom" name="tip" type="number" placeholder="Custom">
+        <div class="tip">
+          <label for="tip">Select Tip %</label>
+          <div class="buttons">
+            <button class="button-tip" value="0.05">5%</button>
+            <button class="button-tip" value="0.1">10%</button>
+            <button class="button-tip" value="0.15">15%</button>
+            <button class="button-tip" value="0.2">25%</button>
+            <button class="button-tip" value="0.5">50%</button>
+            <input class="button-custom" name="tip" type="number" placeholder="Custom">
+          </div>
         </div>
         <div class="number-form">
-          <label for="number">Number of People</label>
+          <div class="form-label">
+            <label for="number">Number of People</label>
+            <p class="error-message-people">Can't be zero</p>
+          </div>
           <input name="number" class="number" type="number" placeholder="0">
         </div>
       </div>

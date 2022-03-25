@@ -199,3 +199,25 @@ p {
   display: flex;
   margin-bottom: 5em;
 }
+
+.number.error, .bill.error {
+  border: 2px solid rgb(233, 58, 58);
+  border-radius: 4px;
+}
+
+.error-message-bill, .error-message-people {
+  display: none;
+}
+
+.error-message-bill.display, .error-message-people.display {
+  display: block;
+  color: rgb(233, 58, 58);
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.form-label {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+}
