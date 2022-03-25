@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+}
+
+#logo {
+  margin: 3em 0 5em 0;
+}
+
+label {
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+}
+
+input {
+  margin-top: 1em;
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  height: 3.5em;
+  width: 100%;
+}
+
+.form {
+  padding: 3em;
+}
+
+.bill {
+  margin-bottom: 2em;
+}
+
+.buttons {
+  margin: 1em 0 2em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.button-tip {
+  background-color: hsl(183, 100%, 15%);
+  border: 0;
+  color: hsl(189, 41%, 97%);
+  font-family: 'Space Mono', monospace;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.button-custom {
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  color: hsl(186, 14%, 43%);
+  font-family: 'Space Mono', monospace;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 24px;
+  width: 920px;
+  display: flex;
+}
