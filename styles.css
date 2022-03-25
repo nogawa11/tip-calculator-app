@@ -26,7 +26,8 @@ input {
 }
 
 .form {
-  padding: 3em;
+  margin: 3em 1em 3em 3em;
+  width: 60%;
 }
 
 .bill {
@@ -37,7 +38,7 @@ input {
   margin: 1em 0 2em 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 0.9em;
 }
 
 .button-tip {
@@ -45,9 +46,9 @@ input {
   border: 0;
   color: hsl(189, 41%, 97%);
   font-family: 'Space Mono', monospace;
-  height: 50px;
+  height: 2.3em;
   border-radius: 6px;
-  font-size: 22px;
+  font-size: 1.4em;
   font-weight: 600;
 }
 
@@ -56,15 +57,70 @@ input {
   border: 0;
   color: hsl(186, 14%, 43%);
   font-family: 'Space Mono', monospace;
-  height: 50px;
+  height: 2.3em;
   border-radius: 6px;
-  font-size: 22px;
+  font-size: 1.4em;
   font-weight: 600;
+}
+
+.calculation {
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  margin: 2em;
+  border-radius: 18px;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: hsl(189, 41%, 97%);
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.total, .tip-amount {
+  color: hsl(172, 67%, 45%);
+  font-size: 2.8em;
+}
+
+.button-reset {
+  background-color: #29686D;
+  width: 100%;
+  color:   #20565a;
+  border: 0;
+  font-size: 1.3em;
+  height: 2.4em;
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  border-radius: 6px;
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 24px;
-  width: 920px;
+  width: 57.5em;
   display: flex;
+  margin-bottom: 5em;
 }
