@@ -17,16 +17,16 @@
         </div>
         <label for="tip">Select Tip %</label>
         <div class="buttons">
-          <button class="button-tip">5%</button>
-          <button class="button-tip">10%</button>
-          <button class="button-tip">15%</button>
-          <button class="button-tip">25%</button>
-          <button class="button-tip">50%</button>
+          <button class="button-tip" value="0.05">5%</button>
+          <button class="button-tip" value="0.1">10%</button>
+          <button class="button-tip" value="0.15">15%</button>
+          <button class="button-tip" value="0.2">25%</button>
+          <button class="button-tip" value="0.5">50%</button>
           <input class="button-custom" name="tip" type="number" placeholder="Custom">
         </div>
         <div class="number-form">
           <label for="number">Number of People</label>
-          <input name="number" type="number" placeholder="0">
+          <input name="number" class="number" type="number" placeholder="0">
         </div>
       </div>
       <div class="calculation">
@@ -46,8 +46,9 @@
             <h3 class="total">$0.00</h3>
           </div>
         </div>
-        <button class="button-reset">RESET</button>
+        <button class="button-reset disabled">RESET</button>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
