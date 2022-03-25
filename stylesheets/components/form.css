@@ -1,0 +1,75 @@
+label {
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+}
+
+.form-bill input, .form-number input {
+  margin-top: 1em;
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  height: 3.0em;
+  width: 100%;
+}
+
+.form-bill input[type="number"], .form-number input[type="number"] {
+  color: hsl(183, 100%, 15%);
+  font-size: 1em;
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 0.8em;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: hsl(184, 14%, 70%);
+  font-size: 120%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  text-align: right;
+}
+
+.form-bill input {
+  background-image: url('images/icon-dollar.svg');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+.form-number input {
+  background-image: url('images/icon-person.svg');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+.bill {
+  margin-bottom: 2em;
+}
+
+.number.error, .bill.error {
+  border: 2px solid rgb(233, 58, 58);
+  border-radius: 4px;
+}
+
+.error-message-bill, .error-message-people {
+  display: none;
+}
+
+.error-message-bill.display, .error-message-people.display {
+  display: block;
+  color: rgb(233, 58, 58);
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.form-label {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

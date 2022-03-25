@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('components/button.css');
+@import url('components/card.css');
+@import url('components/form.css');
+@import url('components/media.css');
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: hsl(189, 41%, 97%);
+  font-weight: 600;
+}
+
+p {
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+#logo {
+  margin: 3em 0 4em 0;
+}
+
+
+
+.calculation-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.calculation-total, .calculation-tip {
+  color: hsl(172, 67%, 45%);
+  font-size: 2.8em;
+}
