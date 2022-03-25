@@ -71,4 +71,7 @@ resetButton.addEventListener('click', (event) => {
   billInput.value = "";
   customInput.value = "";
   numberInput.value = "";
+  tipPercent = "";
+  billAmount = "";
+  numberOfPeople = "";
 })
