@@ -1,19 +1,41 @@
 .form-tip-buttons {
-  margin: 1em 0 2em 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.9em;
+  margin: 1em 0 2em 0;
+}
+
+.form-tip-buttons > input[type="number"] {
+  background-color: hsl(189, 41%, 97%);
+  color:hsl(183, 100%, 15%);
+  width: 6em;
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  font-size: 120%;
+  text-align: center;
+  border: 0;
+  border-radius: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+.form-tip-buttons > input::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  font-size: 120%;
+  text-align: center;
 }
 
 .button-tip {
   background-color: hsl(183, 100%, 15%);
-  border: 0;
   color: hsl(189, 41%, 97%);
-  font-family: 'Space Mono', monospace;
   height: 2.3em;
-  border-radius: 6px;
+  font-family: 'Space Mono', monospace;
   font-size: 1.4em;
   font-weight: 600;
+  border: 0;
+  border-radius: 6px;
   transition: 0.5s;
 }
 
@@ -27,49 +49,27 @@
   color: hsl(183, 100%, 15%);
 }
 
-.form-tip-buttons > input[type="number"] {
-  color:hsl(183, 100%, 15%);
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  background-color: hsl(189, 41%, 97%);
-  border-radius: 6px;
-  border: 0;
-  width: 6em;
-  font-family: 'Space Mono', monospace;
-  font-weight: 600;
-  font-size: 120%;
-}
-
-.form-tip-buttons > input::placeholder {
-  color: hsl(186, 14%, 43%);
-  text-align: center;
-  font-family: 'Space Mono', monospace;
-  font-weight: 600;
-  font-size: 120%;
-}
-
 .button-reset {
   background-color: #29686D;
-  width: 100%;
   color:   #20565a;
-  border: 0;
-  font-size: 1.3em;
   height: 2.4em;
+  width: 100%;
+  font-size: 1.3em;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
+  border: 0;
   border-radius: 6px;
 }
 
 .button-reset.active {
   background-color:hsl(172, 67%, 45%);;
   color: hsl(183, 100%, 15%);
-  width: 100%;
-  border: 0;
-  font-size: 1.3em;
   height: 2.4em;
+  width: 100%;
+  font-size: 1.3em;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
+  border: 0;
   border-radius: 6px;
   transition: 0.5s;
 }

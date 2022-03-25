@@ -5,10 +5,10 @@
 @import url('components/media.css');
 
 body {
-  background-color: hsl(185, 41%, 84%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: hsl(185, 41%, 84%);
   font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
@@ -28,25 +28,11 @@ h4 {
 
 p {
   color: hsl(184, 14%, 56%);
+  font-size: 0.8em;
   margin: 0;
   padding: 0;
-  font-size: 0.8em;
 }
 
 #logo {
   margin: 3em 0 4em 0;
-}
-
-
-
-.calculation-labels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1em;
-}
-
-.calculation-total, .calculation-tip {
-  color: hsl(172, 67%, 45%);
-  font-size: 2.8em;
 }
