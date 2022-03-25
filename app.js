@@ -58,14 +58,14 @@ const calculateTip = () => {
   if ((numberOfPeople > 0) && (tipPercent > 0) && (billAmount > 0)) {
     tipAmount.innerText = `$${(billAmount * tipPercent).toFixed(2)}`;
     total.innerText = `$${(billAmount * tipPercent / numberOfPeople).toFixed(2)}`;
-    reset.classList.remove('disabled');
+    reset.classList.add('active');
   }
 }
 
 reset.addEventListener('click', (event) => {
   tipAmount.innerText = '$0.00'
   total.innerText = '$0.00'
-  event.target.classList.add('disabled');
+  event.target.classList.remove('active');
   buttons.forEach((button) => {
     button.classList.remove('active')
   });

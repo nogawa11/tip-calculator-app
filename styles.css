@@ -162,7 +162,7 @@ p {
   font-size: 2.8em;
 }
 
-.button-reset.disabled {
+.button-reset {
   background-color: #29686D;
   width: 100%;
   color:   #20565a;
@@ -174,7 +174,7 @@ p {
   border-radius: 6px;
 }
 
-.button-reset {
+.button-reset.active {
   background-color:hsl(172, 67%, 45%);;
   color: hsl(183, 100%, 15%);
   width: 100%;
@@ -187,7 +187,7 @@ p {
   transition: 0.5s;
 }
 
-.button-reset:hover {
+.button-reset.active:hover {
   background-color:#9FE8DF;
   color: hsl(183, 100%, 15%);
 }
